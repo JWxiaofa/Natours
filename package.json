@@ -4,7 +4,8 @@
   "description": "udemy project",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "dev": "nodemon server.js",
+    "start": "node server.js",
     "start:prod": "NODE_ENV=production nodemon server.js ",
     "debug": "ndb server.js",
     "watch:js": "parcel watch --no-hmr ./public/js/index.js --out-dir ./public/js --public-url /js --out-file bundle.js",
@@ -49,5 +50,8 @@
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.33.0",
     "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
   }
 }
