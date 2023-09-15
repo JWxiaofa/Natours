@@ -172,12 +172,12 @@ tourSchema.pre(/^find/, function (next) {
   next();
 });
 
-tourSchema.post(/^find/, function (docs, next) {
-  // 'docs': all documents we returned from the query
-  console.log(`Query took ${Date.now() - this.start} milliseconds!`);
-  // console.log(docs);
-  next();
-});
+// tourSchema.post(/^find/, function (docs, next) {
+//   // 'docs': all documents we returned from the query
+//   console.log(`Query took ${Date.now() - this.start} milliseconds!`);
+//   // console.log(docs);
+//   next();
+// });
 
 tourSchema.pre(/^find/, function (next) {
   this.populate({
